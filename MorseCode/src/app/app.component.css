@@ -1,0 +1,19 @@
+ul{
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: yellow;
+  color: black;
+  font-size: 30px;
+}
+
+li{
+  float: left;
+}
+li:not(:first-child) {
+  margin-left: 40px;
+}
+
+a{
+  color: black;
+}

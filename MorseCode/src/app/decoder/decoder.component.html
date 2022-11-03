@@ -1,0 +1,17 @@
+<h2>Decoder:</h2>
+
+<p>Geben Sie Ihren Decodierungscode ein:</p>
+
+<textarea name="eingabeTextFeld" id="eingabeTextFeld" cols="35" rows="5" (ngModelChange)="inputTextChanged($event)" [(ngModel)]="inputText"></textarea>
+<p></p>
+<button (click)="decodieren()" [disabled]="!validInput">Decodieren</button>
+
+<p>Decodierter Code:</p>
+
+<textarea name="ausgabeTextFeld" id="ausgabeTextFeld" cols="35" rows="5" readonly>{{decodierterText()}}</textarea>
+
+<!--
+  Butten ausgekraut
+  Ausgabetext schreibgeschützt
+
+-->

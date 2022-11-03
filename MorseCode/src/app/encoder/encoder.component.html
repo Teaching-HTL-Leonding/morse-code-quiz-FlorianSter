@@ -1,0 +1,11 @@
+<h2>Encoder:</h2>
+
+<p>Geben Sie Ihren Encodierungscode ein:</p>
+
+<textarea name="eingabeTextFeld" id="eingabeTextFeld" cols="35" rows="5" [(ngModel)]="this.inputText"></textarea>
+<p></p>
+<button (click)="enkodieren()">Encodieren</button>
+
+<p>Encodierter Code:</p>
+
+<textarea name="ausgabeTextFeld" id="ausgabeTextFeld" cols="35" rows="5" readonly>{{this.outputText}}</textarea>
